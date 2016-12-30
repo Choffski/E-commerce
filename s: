@@ -1,0 +1,11 @@
+.product-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around; }
+  .product-list-item {
+    width: 32%;
+    min-width: 200px;
+    display: flex; }
+
+/*# sourceMappingURL=s:.map */

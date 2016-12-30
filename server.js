@@ -29,11 +29,22 @@ return JSON.parse(content);
 }
 
 
-app.get('/getProducts', function(req, res){
+app.get('/getAllProducts', function(req, res){
 
 let content = getProductsFromFile();
 res.send(getProductsFromFile());
 })
+
+app.get('/getAllProductsInCategory/:category', function(req, res){
+
+let content = getProductsFromFile();
+let promises = content.filter(item => item.category === req.params.category)
+Promise.all(promises)
+  .then( promises =>{
+  res.send(promises)
+})
+})
+
 
 
 

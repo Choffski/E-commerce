@@ -1,21 +1,40 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { getProducts } from '../Actions/productActions';
+
+import ProductList from '../Components/ProductList';
+
+import { getProducts, getAllInCategory } from '../Actions/productActions';
 
 class ProductPage extends Component {
 
 componentWillMount(){
+this.props.dispatch(getAllInCategory());
+}
 
-this.props.dispatch(getProducts());
+constructor(){
+  super();
+//  this.handleCategory = this.handleCategoryChange.bind(this);
+}
 
+
+handleCategoryChange = (category) =>{
+  this.props.dispatch(getAllInCategory(category));
 }
 
   render() {
     return (
       <div className="ProductPage">
 
-        <h1>This is ProductPage</h1>
+        <button onClick={this.handleCategoryChange.bind(this,'fruit')}>
+          Fruits!
+        </button>
+
+        <button onClick={this.handleCategoryChange.bind(this,'vegetable')}>
+          Vegetables!
+        </button>
+
+        <ProductList products={this.props.products}/>
 
         <Link to="/basket"> Show Basket </Link>
       </div>

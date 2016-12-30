@@ -68,8 +68,8 @@
     "category": "fruit",
     "price": 20,
     "image":{
-      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Banana&w=150&h=150&txttrack=0",
-      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Banana&w=350&h=350&txttrack=0"
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Durian&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Durian&w=350&h=350&txttrack=0"
     },
     "tags": ["fruit", "yellow", "soft", "strong odor", "healthy"]
   },{
@@ -82,5 +82,63 @@
       "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffffff&txtclr=000000&txt=Dragon+Fruit&w=350&h=350&txttrack=0"
     },
     "tags": ["fruit", "exotic", "white", "healthy"]
+  },
+
+  {
+    "id" : "09",
+    "name": "Cucumber",
+    "category": "vegetable",
+    "price": 1.2,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=3dfb3d&txtclr=000000&txt=Cucumber&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=3dfb3d&txtclr=000000&txt=Cucumber&w=350&h=350&txttrack=0"
+    },
+    "tags": ["watery", "green", "healthy"]
+  },
+  {
+    "id" : "10",
+    "name": "Corn",
+    "category": "vegetable",
+    "price": 5,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Corn&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Corn&w=350&h=350&txttrack=0"
+    },
+    "tags": ["vegetable", "yellow", "healthy", "messy"]
+  },
+  {
+    "id" : "11",
+    "name": "Tomato",
+    "category": "vegetable",
+    "price": 3.3,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=FFA500&txtclr=000000&txt=Tomato&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=FFA500&txtclr=000000&txt=Tomato&w=350&h=350&txttrack=0"
+    },
+    "tags": ["sweet", "red", "healthy"]
+  },
+  {
+    "id" : "12",
+    "name": "Pumpkin",
+    "category": "vegetable",
+    "price": 12.5,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=FFA500&txtclr=000000&txt=Pumpkin&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=FFA500&txtclr=000000&txt=Pumpkin&w=350&h=350&txttrack=0"
+    },
+    "tags": ["vegetable", "orange", "healthy", "seasonal", "scary"]
+  },
+  {
+    "id" : "13",
+    "name": "Salad",
+    "category": "vegetable",
+    "price": 2,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=c5f4c5&txtclr=000000&txt=Salad&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=c5f4c5&txtclr=000000&txt=Salad&w=350&h=350&txttrack=0"
+    },
+    "tags": ["vegetable", "leafy", "green", "healthy"]
   }
+
+
 ]
