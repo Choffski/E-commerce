@@ -1,16 +1,31 @@
 
 const initialState ={
 productList:[],
-filteredLit:[],
+filteredList:[],
 fetching:false,
-fetched:false
+fetched:false,
+error: null
 }
 
 export default function reducer (state = initialState, action){
 
 switch (action.type) {
-  case "CASE_NAME":{
 
+  ///// GET PRODUCTS ////
+  case "GET_PRODUCTS_PENDING":{
+
+    return {...state, fetching:true, fetched:false};
+    break;
+  }
+
+  case "GET_PRODUCTS_FULLFILLED":{
+
+    return {...state, fetching:false, fetched:true, productList:action.payload}
+    break;
+  }
+  case "GET_PRODUCTS_REJECTED":{
+
+    return {...state, fetched:false, fetching:false, error:action.payload}
     break;
   }
 

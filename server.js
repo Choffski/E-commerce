@@ -3,6 +3,9 @@ var bodyParser = require('body-parser');
 var port = 8000;
 var fs = require('fs');
 
+var productsRef = require('./products.json');
+var receitRef = require('./receits.json');
+
 var app = express();
 
 
@@ -18,7 +21,19 @@ app.use(function(req, res, next) {
 });
 
 
+///// Requests
 
+function getProductsFromFile(){
+  let content = fs.readFileSync('./products.json');
+return JSON.parse(content);
+}
+
+
+app.get('/getProducts', function(req, res){
+
+let content = getProductsFromFile();
+res.send(getProductsFromFile());
+})
 
 
 

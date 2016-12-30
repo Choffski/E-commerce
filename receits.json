@@ -1,0 +1,11 @@
+[
+  {
+    "transactionID": "012345",
+    "products": [],
+    "totalPrice":20,
+    "discount": 2,
+    "shipping": 5,
+    "finalPrice": 25,
+    "buyerID": "01"
+  }
+]

@@ -51,7 +51,7 @@
       "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=098909&txtclr=000000&txt=Mango&w=150&h=150&txttrack=0",
       "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=098909&txtclr=000000&txt=Mango&w=350&h=350&txttrack=0"
     },
-    "tags": ["sweet", "yellow", "bitter" "healthy"]
+    "tags": ["sweet", "yellow", "bitter","healthy"]
   },{
     "id" : "06",
     "name": "Kiwi",
@@ -61,7 +61,7 @@
       "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=c5f4c5&txtclr=000000&txt=Kiwi&w=150&h=150&txttrack=0",
       "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=c5f4c5&txtclr=000000&txt=Kiwi&w=350&h=350&txttrack=0"
     },
-    "tags": ["fruit", "bitter" "green", "healthy"]
+    "tags": ["fruit", "bitter", "green", "healthy"]
   },{
     "id" : "07",
     "name": "Durian",
