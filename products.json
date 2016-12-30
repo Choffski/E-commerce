@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "01",
+    "name": "Banana",
+    "category": "fruit",
+    "price": 1,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Banana&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Banana&w=350&h=350&txttrack=0"
+    },
+    "tags": ["sweet", "yellow", "healthy"]
+  },
+  {
+    "id" : "02",
+    "name": "Orange",
+    "category": "fruit",
+    "price": 0.5,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=FFA500&txtclr=000000&txt=Orange&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=FFA500&txtclr=000000&txt=Orange&w=350&h=350&txttrack=0"
+    },
+    "tags": ["sweet", "orange", "healthy"]
+  },
+  {
+    "id" : "03",
+    "name": "Apple",
+    "category": "fruit",
+    "price": 1.2,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=3dfb3d&txtclr=000000&txt=Apple&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=3dfb3d&txtclr=000000&txt=Apple&w=350&h=350&txttrack=0"
+    },
+    "tags": ["sour", "green", "healthy"]
+  },
+  {
+    "id" : "04",
+    "name": "Pineapple",
+    "category": "fruit",
+    "price": 12,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=9a9a02&txtclr=000000&txt=Pineapple&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=9a9a02&txtclr=000000&txt=Pineapple&w=350&h=350&txttrack=0"
+    },
+    "tags": ["sweet", "citric", "yellow", "healthy"]
+  },{
+    "id" : "05",
+    "name": "Mango",
+    "category": "fruit",
+    "price": 6,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=098909&txtclr=000000&txt=Mango&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=098909&txtclr=000000&txt=Mango&w=350&h=350&txttrack=0"
+    },
+    "tags": ["sweet", "yellow", "bitter" "healthy"]
+  },{
+    "id" : "06",
+    "name": "Kiwi",
+    "category": "fruit",
+    "price": 4,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=c5f4c5&txtclr=000000&txt=Kiwi&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=c5f4c5&txtclr=000000&txt=Kiwi&w=350&h=350&txttrack=0"
+    },
+    "tags": ["fruit", "bitter" "green", "healthy"]
+  },{
+    "id" : "07",
+    "name": "Durian",
+    "category": "fruit",
+    "price": 20,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Banana&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffff00&txtclr=000000&txt=Banana&w=350&h=350&txttrack=0"
+    },
+    "tags": ["fruit", "yellow", "soft", "strong odor", "healthy"]
+  },{
+    "id" : "08",
+    "name": "Dragon-fruit",
+    "category": "fruit",
+    "price": 25,
+    "image":{
+      "thumbnail": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffffff&txtclr=000000&txt=Dragon+Fruit&w=150&h=150&txttrack=0",
+      "normal": "https://placeholdit.imgix.net/~text?txtsize=38&bg=ffffff&txtclr=000000&txt=Dragon+Fruit&w=350&h=350&txttrack=0"
+    },
+    "tags": ["fruit", "exotic", "white", "healthy"]
+  }
+]
