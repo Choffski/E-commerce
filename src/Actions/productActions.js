@@ -26,3 +26,14 @@ export function getAllInCategory(category= 'fruit'){
     })
   }
 }
+
+export function search(searchInput=""){
+  return dispatch =>{
+    if(searchInput ===""){
+      dispatch({type:"FILTERS_DEFAULT"});
+    } else{
+      dispatch({type:"UPDATE_SEARCH_INPUT", payload:searchInput})
+      dispatch({type:"SEARCH_PRODUCTS"});
+    }
+  }
+}
