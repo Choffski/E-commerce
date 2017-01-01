@@ -84,7 +84,7 @@ box-shadow: 3px 2px 5px 0px rgba(168,159,168,0.74);
   margin-left: 10%;
   border-bottom: 1px solid #D3D3D3;
   padding: 10px 5px 10px 5px;
-
+  margin-bottom:20px;
   & input{
     width: 70%;
     height: 30px;
@@ -93,7 +93,10 @@ box-shadow: 3px 2px 5px 0px rgba(168,159,168,0.74);
 
 .product-list{
   width: 100%;
-  height: auto;
+  min-height: 525px;
+  max-height: 525px;
+  overflow: auto;
+  height: 100%;
   display: flex;
   justify-content:flex-start;
   flex-wrap: wrap;
@@ -101,14 +104,31 @@ box-shadow: 3px 2px 5px 0px rgba(168,159,168,0.74);
 
 
   &-item{
+    margin: .1% .1% 5px .1%;
   width: 33%;
   min-width: 200px;
   display: block;
-  text-align: center;
 
   &-img{
     max-width: 100%;
   }
+  &-info{
+    display: flex;
+    flex-direction: row;
+
+
+    &-text{
+    width: 80%;
+    text-align: left;
+    & h3 {
+      margin: 2px 5px 2px 5px;
+    }
+    & p {
+      margin: 2px 5px 2px 5px;
+    }
+    }
+  }
+
 
 }
 }

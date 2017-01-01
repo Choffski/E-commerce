@@ -70,24 +70,38 @@ body {
   width: 80%;
   margin-left: 10%;
   border-bottom: 1px solid #D3D3D3;
-  padding: 10px 5px 10px 5px; }
+  padding: 10px 5px 10px 5px;
+  margin-bottom: 20px; }
   .filter-bar input {
     width: 70%;
     height: 30px; }
 
 .product-list {
   width: 100%;
-  height: auto;
+  min-height: 525px;
+  max-height: 525px;
+  overflow: auto;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   flex-grow: 1; }
   .product-list-item {
+    margin: .1% .1% 5px .1%;
     width: 33%;
     min-width: 200px;
-    display: block;
-    text-align: center; }
+    display: block; }
     .product-list-item-img {
       max-width: 100%; }
+    .product-list-item-info {
+      display: flex;
+      flex-direction: row; }
+      .product-list-item-info-text {
+        width: 80%;
+        text-align: left; }
+        .product-list-item-info-text h3 {
+          margin: 2px 5px 2px 5px; }
+        .product-list-item-info-text p {
+          margin: 2px 5px 2px 5px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,8 @@
 import axios from 'axios';
 
-export function basket(){
+export function addToBasket(item){
   return dispatch =>{
-
-    dispatch({type:"SOME_TYPE"}, payload:"some payload");
-
+    dispatch({type:"ADD_TO_BASKET", payload:item});
   }
 
 }

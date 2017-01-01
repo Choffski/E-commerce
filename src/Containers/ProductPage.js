@@ -9,6 +9,7 @@ import Header from '../Components/Header';
 
 
 import { getProducts, getAllInCategory, search } from '../Actions/productActions';
+import { addToBasket } from '../Actions/basketActions';
 
 class ProductPage extends Component {
  /// Lifecycle Events
@@ -26,6 +27,11 @@ navigateToBasket = () => {
 hashHistory.push('/basket')
 };
 
+addToBasket = (item) => {
+this.props.dispatch(addToBasket(item));
+
+}
+
 handleSearch = (val) =>{
   this.props.dispatch(search(val));
 }
@@ -35,7 +41,7 @@ handleSearch = (val) =>{
       <div className="product-page-container">
 
 
-        <Header handleClick={this.navigateToBasket} basketItems={this.props.products.length}/>
+        <Header handleClick={this.navigateToBasket} basketItems={this.props.basket.length}/>
 
       <div className="product-page-body">
 
@@ -43,9 +49,9 @@ handleSearch = (val) =>{
         <Sidebar handleChange={this.handleCategoryChange}/>
         {
           this.props.shouldFilter?
-          <ProductList searchValue={this.props.searchInput} handleSearch={this.handleSearch} products={this.props.filtered}/>
+          <ProductList handleClick={this.addToBasket} searchValue={this.props.searchInput} handleSearch={this.handleSearch} products={this.props.filtered}/>
           :
-          <ProductList searchValue={this.props.searchInput} handleSearch={this.handleSearch} products={this.props.products}/>
+          <ProductList handleClick={this.addToBasket} searchValue={this.props.searchInput} handleSearch={this.handleSearch} products={this.props.products}/>
         }
 
       </div>
@@ -69,7 +75,8 @@ function mapStateToProps(store){
     products:store.products.productList,
     filtered: store.products.filteredList,
     shouldFilter: store.products.filtersApplied,
-    searchInput: store.products.searchInput
+    searchInput: store.products.searchInput,
+    basket: store.basket.products
   }
 }
 

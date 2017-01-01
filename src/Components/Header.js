@@ -40,17 +40,17 @@ class Header extends Component {
           <div className="product-page-header-right">
             <Badge
                  badgeContent={this.props.basketItems}
-                  secondary={true}
-                  badgeStyle={{top: 35 , right: 35}}>
+                 secondary={true}
+                 badgeStyle={{top: 35 , right: 35}}>
 
               <IconButton
-                iconStyle={btnStyle.mediumIcon}
-                style ={btnStyle.medium}
-                onTouchTap={this.props.handleClick}>
-                <ShoppingCart/>
+                 iconStyle={btnStyle.mediumIcon}
+                 style ={btnStyle.medium}
+                 onTouchTap={this.props.handleClick}>
+              <ShoppingCart/>
               </IconButton>
 
-              </Badge>
+            </Badge>
         </div>
 
       </div>
